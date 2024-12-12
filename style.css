@@ -55,3 +55,29 @@ button{
 #right-side{
     float: right;
 }
+
+.team1{
+    background-color: #FFCF00;
+    font-size: 150%;
+    max-width: 12.5%;
+    text-align: center;
+}
+.team2{
+    background-color: #FFCF00;
+    font-size: 150%;
+    max-width: 12.5%;
+    text-align: center;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+.golok{
+    background-color: #FFCF00;
+    font-size: 1000%;
+    max-width: 12.5%;
+    text-align: center;
+   /* align-items: center;*/
+    margin: auto;
+}
