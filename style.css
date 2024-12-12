@@ -29,3 +29,23 @@ h5 {
 #plus {
     height: 20px;
 }
+
+.sarga{
+    background-color: #FFCF00;
+    width: 0.5%;
+    height: 500%;
+    color:  #FFCF00;
+}
+
+.piros{
+    background-color: #FF0000;
+    width: 0.5%;
+    color: #FF0000;
+}
+
+button{
+    background-color: #FFCF00;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
