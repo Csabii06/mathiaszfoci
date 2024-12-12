@@ -35,12 +35,14 @@ h5 {
     width: 0.5%;
     height: 500%;
     color:  #FFCF00;
+    border-radius: 25%;
 }
 
 .piros{
     background-color: #FF0000;
     width: 0.5%;
     color: #FF0000;
+    border-radius: 25%;
 }
 
 button{
@@ -48,4 +50,8 @@ button{
     color: black;
     font-weight: bolder;
     text-align: center;
+}
+
+#right-side{
+    float: right;
 }
