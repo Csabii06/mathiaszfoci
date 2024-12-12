@@ -52,6 +52,52 @@ img {
     gap: 10px;
     padding-right: 50px;
 }
-#base {
-    align-items: ;
+.sarga{
+    background-color: #FFCF00;
+    width: 0.5%;
+    height: 500%;
+    color:  #FFCF00;
+    border-radius: 25%;
+}
+
+.piros{
+    background-color: #FF0000;
+    width: 0.5%;
+    color: #FF0000;
+    border-radius: 25%;
+}
+
+button{
+    background-color: #FFCF00;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+.team1{
+    background-color: #FFCF00;
+    font-size: 150%;
+    max-width: 12.5%;
+    text-align: center;
+}
+.team2{
+    background-color: #FFCF00;
+    font-size: 150%;
+    max-width: 12.5%;
+    text-align: center;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+.golok{
+    background-color: #FFCF00;
+    font-size: 1000%;
+    max-width: 20%;
+    text-align: center;
+    /*align-items: center;*/
+    margin: auto;
+}
+main {
+    justify-content: first baseline;
 }
