@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>MATHIÁSZ FOCI</h1>
+        <h1>MATHIÁSZ FOCI</h1><br>
         <section id="header-section">
             <h5 id="half-time">1. félidő</h5>
             <span id="time">45:00</span>
@@ -17,8 +17,8 @@
                 <button type="button" id="plus">+</button>
             </div>
         </section>
-    </header>
-    <main>
+    </header><br><br>
+    <main class="base">
 
         <aside id="left-side">
             <form>
@@ -29,49 +29,42 @@
         </aside>
 
         <section id="team-1" class="team1">
-            <h2>Team 1</h2>
-            <button type="button">+</button>
-            
-            
-            
-            <button type="button">-</button>
-            
-            
+            <div class="goal-buttons">
+                <button type="button">+</button>
+                <button type="button">-</button> 
+            </div> 
+            <h2>Team 1</h2>    
         </section>
 
         <section id="gol" class="golok">
             3-1 <br>
         </section>
-        <button type="button">START</button>
-        <button type="button">STOP</button>
 
-        <section id="team-2" class="team2">
-            <button type="button">+</button>
-            
-            
-            
-            <button type="button">-</button>
 
 
 
-        <section id="team-2">
+        <section id="team-2" class="team2">
+            <div class="goal-buttons">
+                <button type="button">+</button>
+                <button type="button">-</button>
+            </div>
             <h2>Team 2</h2>
-            <button type="button">+</button>
-            
-            
-            
-            <button type="button">-</button>
         </section>
 
         <aside id="right-side">
             <form>
-                <input type="text" id="team-2-lap" value="játékos neve">
-                <button type="button" id="team-2-sarga" class="sarga">!</button>
-                <button type="button" id="team-2-piros" class="piros">!</button>
-            </form>
+                <input type="text" id="team-1-lap" value="játékos neve">
+                <button type="button" id="team-1-sarga" class="sarga">!</button>
+                <button type="button" id="team-1-piros" class="piros">!</button>
+            </form>  
         </aside>
-
-    </main>
+        
+    </main><br>
+    <footer>
+        <button type="button">START</button>
+        <button type="button">STOP</button>
+    </footer>
+    
 
 
     <script src="script.js"></script>

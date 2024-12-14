@@ -2,16 +2,22 @@ body {
     background-color: #1E1E1E;
     font-family: Inter;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 h1 {
     color: #FFCF00;
     text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
 }
 #header-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
+    gap: 100px;
 }
 h5, span {
     color: white;
@@ -31,6 +37,12 @@ h5 {
 }
 #plus {
     height: 20px;
+    border: none;        
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
 img {
     width: 2%;
@@ -40,17 +52,19 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 10px;
     padding-left: 50px;
+    padding-bottom: 180px;
 }
 #right-side {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: baseline;
+    justify-content: end;
+    align-items: flex-end;
     gap: 10px;
     padding-right: 50px;
+    padding-bottom: 180px;
 }
 .sarga{
     background-color: #FFCF00;
@@ -63,11 +77,20 @@ img {
 .piros{
     background-color: #FF0000;
     width: 0.5%;
+    height: 500%;
     color: #FF0000;
     border-radius: 25%;
 }
 
-button{
+footer button{
+    background-color: #FFCF00;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    height: 50px;
+    width: 75px;
+}
+button {
     background-color: #FFCF00;
     color: black;
     font-weight: bolder;
@@ -76,14 +99,25 @@ button{
 .team1{
     background-color: #FFCF00;
     font-size: 150%;
-    max-width: 12.5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
 }
 .team2{
     background-color: #FFCF00;
     font-size: 150%;
-    max-width: 12.5%;
     text-align: center;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h2{
@@ -93,11 +127,23 @@ h2{
 .golok{
     background-color: #FFCF00;
     font-size: 1000%;
-    max-width: 20%;
     text-align: center;
-    /*align-items: center;*/
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
 }
-main {
-    justify-content: first baseline;
+.base {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.goal-buttons {
+    display: flex;
+    gap: 100px;
 }
