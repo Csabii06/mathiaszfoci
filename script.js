@@ -1,3 +1,5 @@
+const felidok=['1','2']
+
 let lista1sarga=[]
 let lista1piros=[]
 let lista2sarga=[]
@@ -65,6 +67,17 @@ function Team1sarga(){
 
 }
 
+function Felidok(){
+    let fi1=parseInt(document.getElementById("egy").value)
+    let fi2=parseInt(document.getElementById("ketto").value)
+    let fi=document.getElementById("felido").value
+    if(fi==fi1){
+        szamlalo;
+    }
+    else{
+        szamlalo=0;
+    }
+}
 
 let szamlalo2=document.getElementById("extra-time").value;
 let idoszal4;

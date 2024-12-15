@@ -26,8 +26,11 @@
         </main><br><br>
         <button type="button" id="teams-input-button" onclick="Teams()">Beküldés</button><br>
         <section id="header-section">
-            <h5 id="half-time">1. félidő</h5>
-            <span id="time"></span>
+            <h5 id="half-time"><form><select name="felido" id="felido" oninput="Felidok()">
+                <option value="egy" id="egy">1</option>
+                <option value="ketto" id="ketto">2</option>
+            </select></form> félidő</h5>
+            <span id="time">0:00</span>
             <div id="extra-time-div">
                 <input type="number" id="extra-time" placeholder="+ 2:00">
                 <button type="button" id="plus" onclick="Hosszabbitas()">+</button><br>
@@ -44,7 +47,9 @@
                 <button type="button" id="team-1-piros" class="piros" onclick="Team1piros()">!</button>
             </form> <br>
             <section>
+                <h5>sárga lap:</h5>
                 <ul id="felsorol1"></ul>
+                <h5>piros lap:</h5>
                 <ul id="felsorolas1piros"></ul>
             </section>
             
@@ -79,9 +84,10 @@
                 <button type="button" id="team-2-sarga" class="sarga" onclick="Team2sarga()">!</button>
                 <button type="button" id="team-2-piros" class="piros" onclick="Team2piros()">!</button>
             </form>  <br>
-
             <section>
+                <h5>sárga lap:</h5>
                 <ul id="felsorolas2"></ul>
+                <h5>piros lap:</h5>
                 <ul id="felsorolas2piros"></ul>
             </section>
         </aside>
