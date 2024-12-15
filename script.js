@@ -131,3 +131,21 @@ function Tick2(){
     }
     Kiiras2()
 }
+
+let gol1=1;
+let gol2=1;
+function T1plus(){
+    document.getElementById("t1-gol").innerHTML=gol1++
+}
+
+function T1minus(){
+    document.getElementById("t1-gol").innerHTML=gol1--
+}
+
+function T2plus(){
+    document.getElementById("t2-gol").innerHTML=gol2++
+}
+
+function T2minus(){
+    document.getElementById("t2-gol").innerHTML=gol2--
+}
