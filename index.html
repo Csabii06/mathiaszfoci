@@ -9,6 +9,22 @@
 <body>
     <header>
         <h1>MATHIÁSZ FOCI</h1><br>
+        <main class="team-inputs">
+            <section>
+                <form>
+                <label for="team1">Add meg az egyik csapat nevét!</label><br><br>
+                <input type="text" id="team1" name="team1" required>
+            </section>
+            <section>
+                <label for="ido">Add meg a félidők időtartamát!</label><br><br>
+                <input type="number" id="ido" name="ido" min="1" required>
+            </section>
+            <section>
+                <label for="team1">Add meg a másik csapat nevét!</label><br><br>
+                <input type="text" id="team2" name="team2" required>
+            </section>
+        </main><br><br>
+        <button type="button" id="teams-input-button" onclick="Teams()">Beküldés</button><br>
         <section id="header-section">
             <h5 id="half-time">1. félidő</h5>
             <span id="time"></span>
@@ -53,7 +69,7 @@
                 <button type="button" onclick="T2plus()">+</button>
                 <button type="button" onclick="T2minus()">-</button>
             </div>
-            <h2 id="t2">Team 2</h2>
+            <h2 id="t2"></h2>
         </section>
 
         <aside id="right-side">

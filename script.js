@@ -10,11 +10,11 @@ let idoszal3=setInterval(Start,1000)
 
 
 
+
 function Teams(){
     let cs1=document.getElementById("team1").value
-    document.getElementById("t1").innerHTML=cs1
-
     let cs2=document.getElementById("team2").value
+    document.getElementById("t1").innerHTML=cs1
     document.getElementById("t2").innerHTML=cs2
 
 }
