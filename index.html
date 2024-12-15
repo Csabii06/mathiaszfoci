@@ -30,7 +30,8 @@
             <span id="time"></span>
             <div id="extra-time-div">
                 <input type="number" id="extra-time" placeholder="+ 2:00">
-                <button type="button" id="plus" onclick="Hosszabbitas()">+</button>
+                <button type="button" id="plus" onclick="Hosszabbitas()">+</button><br>
+                <span id="idohosszabbitas"></span>
             </div>
         </section>
     </header><br><br>
@@ -77,9 +78,12 @@
                 <input type="text" id="team-2-lap">
                 <button type="button" id="team-2-sarga" class="sarga" onclick="Team2sarga()">!</button>
                 <button type="button" id="team-2-piros" class="piros" onclick="Team2piros()">!</button>
-            </form>  
-            <ul id="felsorolas2"></ul>
-            <ul id="felsorolas2piros"></ul>
+            </form>  <br>
+
+            <section>
+                <ul id="felsorolas2"></ul>
+                <ul id="felsorolas2piros"></ul>
+            </section>
         </aside>
         
     </main><br>

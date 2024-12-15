@@ -6,7 +6,6 @@ let lista2piros=[]
 
 let idoszal1=setInterval(Tick1,1000)
 let idoszal2=setInterval(Tick2,1000)
-let idoszal3=setInterval(Start,1000)
 
 
 
@@ -19,13 +18,24 @@ function Teams(){
 
 }
 
+
+let idoszal3;
 let szamlalo=0;
 
 
-function Start(){
-    szamlalo++
-    let figyelo=parseInt(document.getElementById("ido").value*60)
 
+function Start(){
+   idoszal3=setInterval(Szamol,1000) 
+   
+   
+    
+
+    
+
+}
+function Szamol(){
+    let figyelo=parseInt(document.getElementById("ido").value*60)
+    szamlalo++
     let perc=Math.floor(szamlalo/60)
     let sec=szamlalo%60
 
@@ -35,7 +45,9 @@ function Start(){
         clearInterval(idoszal3)
     }
 
-
+}
+function Stop(){
+    clearInterval(idoszal3)
 }
 
 function Team1sarga(){
@@ -50,6 +62,30 @@ function Team1sarga(){
     lista1sarga.forEach(element => {
         main.innerHTML += `<li>${element.neve}</li>`
     });
+
+}
+
+
+let szamlalo2=document.getElementById("extra-time").value;
+let idoszal4;
+function Hosszabbitas(){
+
+    idoszal4=setInterval(Szamol2,1000)
+    
+
+}
+
+function Szamol2(){
+    let figyelo=parseInt(document.getElementById("extra-time").value*60)
+    szamlalo2--
+    let perc2=Math.floor(szamlalo2/60)
+    let sec2=szamlalo2%60
+
+    document.getElementById("idohosszabbitas").innerHTML=`${perc2}:${sec2}`
+
+    if(szamlalo2==figyelo){
+        clearInterval(idoszal4)
+    }
 
 }
 
@@ -150,12 +186,4 @@ function T2minus(){
     document.getElementById("t2-gol").innerHTML=gol2--
 }
 
-function Hosszabbitas(){
-    let ido=document.getElementById("ido").value
-    let hosszabbit=document.getElementById("plus").value
 
-    ido+=hosszabbit
-}
-function Stop(){
-    clearInterval(idoszal3)
-}
