@@ -149,3 +149,13 @@ function T2plus(){
 function T2minus(){
     document.getElementById("t2-gol").innerHTML=gol2--
 }
+
+function Hosszabbitas(){
+    let ido=document.getElementById("ido").value
+    let hosszabbit=document.getElementById("plus").value
+
+    ido+=hosszabbit
+}
+function Stop(){
+    clearInterval(idoszal3)
+}
