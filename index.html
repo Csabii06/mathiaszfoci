@@ -25,21 +25,24 @@
                 <input type="text" id="team-1-lap">
                 <button type="button" id="team-1-sarga" class="sarga" onclick="Team1sarga()">!</button>
                 <button type="button" id="team-1-piros" class="piros" onclick="Team1piros()">!</button>
-            </form>  
-            <ul id="felsorol1"></ul>
-            <ul id="felsorolas1piros"></ul>
+            </form> <br>
+            <section>
+                <ul id="felsorol1"></ul>
+                <ul id="felsorolas1piros"></ul>
+            </section>
+            
         </aside>
 
         <section id="team-1" class="team1">
             <div class="goal-buttons">
-                <button type="button">+</button>
-                <button type="button">-</button> 
+                <button type="button" id="t1-plus" onclick="T1plus()">+</button>
+                <button type="button" id="t1-minus" onclick="T1minus()">-</button> 
             </div> 
-            <h2>Team 1</h2>    
+            <h2 id="t1"></h2>    
         </section>
 
         <section id="gol" class="golok">
-            3-1 <br>
+            <p id="t1-gol">0</p> <p>-</p> <p id="t2-gol">0</p> <br>
         </section>
 
 
@@ -50,12 +53,12 @@
                 <button type="button">+</button>
                 <button type="button">-</button>
             </div>
-            <h2>Team 2</h2>
+            <h2 id="t2">Team 2</h2>
         </section>
 
         <aside id="right-side">
             <form>
-                <input type="text" id="team-2-lap" value="játékos neve">
+                <input type="text" id="team-2-lap">
                 <button type="button" id="team-2-sarga" class="sarga" onclick="Team2sarga()">!</button>
                 <button type="button" id="team-2-piros" class="piros" onclick="Team2piros()">!</button>
             </form>  
