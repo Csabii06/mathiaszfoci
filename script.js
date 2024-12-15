@@ -6,6 +6,7 @@ let lista2piros=[]
 
 let idoszal1=setInterval(Tick1,1000)
 let idoszal2=setInterval(Tick2,1000)
+let idoszal3=setInterval(Start,1000)
 
 
 
@@ -18,6 +19,24 @@ function Teams(){
 
 }
 
+let szamlalo=0;
+
+
+function Start(){
+    szamlalo++
+    let figyelo=parseInt(document.getElementById("ido").value*60)
+
+    let perc=Math.floor(szamlalo/60)
+    let sec=szamlalo%60
+
+    document.getElementById("time").innerHTML=`${perc}:${sec}`
+
+    if(szamlalo==figyelo){
+        clearInterval(idoszal3)
+    }
+
+
+}
 
 function Team1sarga(){
     let nev=document.getElementById("team-1-lap").value;
@@ -29,7 +48,7 @@ function Team1sarga(){
     main.innerHTML=""
 
     lista1sarga.forEach(element => {
-        main.innerHTML += `<li>${element.neve}</li>`/*ide kell majd egy kép egy sárga lapról*/
+        main.innerHTML += `<li>${element.neve}</li>`
     });
 
 }
@@ -112,21 +131,3 @@ function Tick2(){
     }
     Kiiras2()
 }
-
-
-/*
-function T1plus(){
-    let gol=parseInt(document.getElementById("t1-gol").value)
-    gol.innerHTML++
-    console.log(gol)
-}
-T1plus()
-
-function T1minus(){
-
-    let gol=parseInt(document.getElementById("t1-gol").value)
-    gol.innerHTML--
-    console.log(gol)
-
-}
-T1minus()*/
